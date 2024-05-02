@@ -1,0 +1,137 @@
+.header {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: #F5E3DD;
+  padding-left: 20px;
+  color: #46464D;
+}
+
+.header p {
+  margin-top: 80px;
+  font-size: 20px;
+}
+
+.header-text {
+  position: relative;
+}
+
+.divider {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 30px;
+  border-bottom: 1px solid black;
+  margin-top: 5px;
+}
+
+.header-image {
+  flex: none;
+  align-self: stretch;
+}
+
+.header-image img {
+  height: 250px;
+  width: auto;
+}
+
+.filters-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.filters-selection,
+.sorting-options {
+  display: flex;
+  align-items: center;
+}
+
+.filters-selection label,
+.sorting-options label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.filters-selection select,
+.sorting-options select {
+  padding: 5px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sorting-options {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .filters-bar {
+    flex-direction: column;
+  }
+
+  .filters-selection,
+  .sorting-options {
+    width: 100%;
+    justify-content: start;
+    margin-bottom: 10px;
+  }
+
+  .filters-selection select,
+  .sorting-options select {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+#cart-item-count {
+  padding-left: 5px;
+}
+
+.flower-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1px;
+  padding: 0px;
+}
+
+.flower-product-card {
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 10px;
+  width: 400px;
+}
+
+.flower-product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flower-product-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.flower-product-info {
+  padding: 8px 12px;
+}
+
+.flower-product-name {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.flower-product-price {
+  font-size: 0.85em;
+  color: #555;
+  font-weight: 6%;
+}
+
+@media (max-width: 600px) {
+  .flower-product-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

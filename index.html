@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <ul class="topnav">
+    <li><a class="logo" href="index.html"><img src="../assets/FinalProjectLogo.png" alt="Final Project"></a></li>
+    <li class="right"><a href="TrackOrder.html"><img src="../assets/cart.svg" alt="Cart"><span
+          id="cart-item-count">0</span></a></li>
+    <li class="right"><a href="login.html"><img src="../assets/person.svg" alt="Account"></a></li>
+    <li class="right"><a href="login.html">Help</a></li>
+    <li class="right"><a href="TrackOrder.html">Track Order</a></li>
+  </ul>
+
+  <header class="header">
+    <div class="header-text">
+      <h1>Send Her Blooms</h1>
+      <div class="divider"></div>
+      <p>She will love it! Shop All Mother's Day Flowers and Gifts!</p>
+    </div>
+    <div class="header-image">
+      <img src="../assets/bouqs.png" alt="Flower Arrangement">
+    </div>
+  </header>
+
+  <div class="filters-bar">
+    <div class="filters-selection">
+      <label for="flower-type">FILTER</label>
+      <select id="flower-type-select">
+        <option class="placeholder" disabled selected>Flower Type</option>
+        <option value="mixed">Mixed</option>
+        <option value="roses">Roses</option>
+        <option value="lilies">Lilies</option>
+        <option value="tulips">Tulips</option>
+        <option value="daisies">Daisies</option>
+      </select>
+
+      <select id="occasion-select">
+        <option class="placeholder" disabled selected>Occasion</option>
+        <option value="mothersday">Mother's Day</option>
+        <option value="birthday">Birthday</option>
+        <option value="thankyou">Thank You</option>
+      </select>
+
+      <select id="color-select">
+        <option class="placeholder" disabled selected>Color</option>
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+        <option value="orange">Orange</option>
+      </select>
+    </div>
+
+    <div class="sorting-options">
+      <label for="sort">SORT</label>
+      <select id="sorting-select">
+        <option value="price-low-high">Price: Low to High</option>
+        <option value="price-high-low">Price: High to Low</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="flower-products-grid">
+    <div id="flower-rose-red" class="flower-product-card" data-flower-type="roses" data-occasion="mothersday"
+      data-color="red" data-price="54">
+      <a href="AddingToBasket.html?productId=1" class="flower-product-link">
+        <img src="../assets/SugarRush.jpg" alt="Sugar Rush Bouquet" class="flower-product-image">
+        <div class="flower-product-info">
+          <h3 class="flower-product-name">SUGAR RUSH</h3>
+          <p class="flower-product-price">from $54</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="flower-mixed-yellow" class="flower-product-card" data-flower-type="mixed" data-occasion="birthday"
+      data-color="yellow" data-price="54">
+      <a href="AddingToBasket.html?productId=2" class="flower-product-link">
+        <img src="../assets/Lemonade.jpg" alt="Lemonade Bouquet" class="flower-product-image">
+        <div class="flower-product-info">
+          <h3 class="flower-product-name">LEMONADE</h3 class="flower-product-price">from $54</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="flower-lily-red" class="flower-product-card" data-flower-type="lilies" data-occasion="mothersday"
+      data-color="red" data-price="54">
+      <a href="AddingToBasket.html?productId=3" class="flower-product-link">
+        <img src="../assets/TheAngels.jpg" alt="The Angels Bouquet" class="flower-product-image">
+        <div class="flower-product-info">
+          <h3 class="flower-product-name">THE ANGELS</h3>
+          <p class="flower-product-price">from $54</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="flower-daisy-green" class="flower-product-card" data-flower-type="daisies" data-occasion="birthday"
+      data-color="green" data-price="59">
+      <a href="AddingToBasket.html?productId=4" class="flower-product-link">
+        <img src="../assets/Unbreakable.jpg" alt="Unbreakable Bouquet" class="flower-product-image">
+        <div class="flower-product-info">
+          <h3 class="flower-product-name">UNBREAKABLE</h3>
+          <p class="flower-product-price">from $59</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="flower-mixed-red" class="flower-product-card" data-flower-type="mixed" data-occasion="thankyou"
+      data-color="red" data-price="59">
+      <a href="AddingToBasket.html?productId=5" class="flower-product-link">
+        <img src="../assets/SierraSunset.jpg" alt="Sierra Sunset Bouquet" class="flower-product-image">
+        <div class="flower-product-info">
+          <h3 class="flower-product-name">SIERRA SUNSET</h3>
+          <p class="flower-product-price">from $59</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="flower-tulip-green" class="flower-product-card" data-flower-type="tulips" data-occasion="mothersday"
+      data-color="green" data-price="59">
+      <a href="AddingToBasket.html?productId=6" class="flower-product-link">
+        <img src="../assets/Casablanca.jpg" alt="Casablanca Bouquet" class="flower-product-image">
+        <div class="flower-product-info">
+          <h3 class="flower-product-name">CASABLANCA</h3>
+          <p class="flower-product-price">from $59</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="configuration.js"></script>
+</body>
+
+</html>
